@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    background: #071426;
+    color: #e8f0ff;
+}
+
+.desktop {
+    min-height: 100vh;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        #071426 0%,
+        #0b2340 70%,
+        #102f4d 100%
+    );
+}
+
+.window {
+    background: #10233b;
+    border: 2px solid #8aa4c4;
+    box-shadow: 8px 8px 0 #020811;
+}
+
+.welcome-window {
+    width: 650px;
+    max-width: 90%;
+    margin: 60px auto 0;
+}
+
+.window-bar {
+    height: 38px;
+    background: #193452;
+    border-bottom: 2px solid #8aa4c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.window-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.window-buttons button {
+    width: 25px;
+    height: 23px;
+    background: #10233b;
+    color: white;
+    border: 1px solid #8aa4c4;
+    cursor: pointer;
+}
+
+.window-content {
+    padding: 30px;
+}
+
+.terminal-text {
+    color: #61ff9a;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #8fb9ff;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    padding: 12px 18px;
+    background: #193452;
+    color: white;
+    border: 2px solid #8aa4c4;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: #294d72;
+    transform: translate(-2px, -2px);
+}
+
+.status-window {
+    width: 300px;
+    margin: 40px auto;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #61ff9a;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.small-text {
+    color: #8aa4c4;
+    font-size: 13px;
+}
+
+.desktop-icons {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.icon {
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-picture {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: #050d18;
+    border-top: 2px solid #8aa4c4;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+
+    .desktop {
+        padding: 20px;
+    }
+
+    .welcome-window {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .desktop-icons {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 5px;
+    }
+}.dog-window {
+    position: absolute;
+    right: 50px;
+    top: 180px;
+    width: 280px;
+}
+
+.dog-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.dog-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #8aa4c4;
+}
+
+.dog-caption {
+    color: #8fb9ff;
+    line-height: 1.5;
+}
+
+.dog-status {
+    color: #61ff9a;
+    font-size: 14px;
+}
